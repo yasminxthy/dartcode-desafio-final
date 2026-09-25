@@ -27,6 +27,15 @@ class Canal {
     required this.nome,
   });
 }
+class Mensagem {
+  Usuario autor;
+  String texto;
+
+  Mensagem({
+    required this.autor,
+    required this.texto,
+  });
+}
 void main() {
   print('DARTCORD');
 }
