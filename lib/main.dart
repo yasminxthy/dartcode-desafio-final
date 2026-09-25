@@ -49,7 +49,7 @@ void main() {
     apelido: 'PG',
     online: true,
   );
-}
+
 final moderador = Moderador(
     nome: 'Ana',
     apelido: 'Ana',
@@ -59,3 +59,24 @@ final moderador = Moderador(
   final canal = Canal(
     nome: 'dart',
   );
+  
+   final mensagem1 = Mensagem(
+    autor: usuario,
+    texto: 'Olá, DartCord!',
+  );
+
+  final mensagem2 = Mensagem(
+    autor: moderador,
+    texto: 'Continuem praticando.',
+  );
+
+  canal.adicionarMensagem(mensagem1);
+  canal.adicionarMensagem(mensagem2);
+
+print('Canal: #${canal.nome}');
+
+for (final mensagem in canal.mensagens) {
+  print('${mensagem.autor.apelido}: ${mensagem.texto}');
+}
+
+}
