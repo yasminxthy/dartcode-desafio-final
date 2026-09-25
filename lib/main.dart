@@ -9,7 +9,17 @@ class Usuario {
     required this.online,
   });
 }
-
+class Moderador extends Usuario {
+  Moderador({
+    required String nome,
+    required String apelido,
+    required bool online,
+  }) : super(
+          nome: nome,
+          apelido: apelido,
+          online: online,
+        );
+}
 void main() {
   print('DARTCORD');
 }
