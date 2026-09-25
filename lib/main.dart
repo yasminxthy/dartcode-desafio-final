@@ -20,13 +20,6 @@ class Moderador extends Usuario {
           online: online,
         );
 }
-class Canal {
-  String nome;
-
-  Canal({
-    required this.nome,
-  });
-}
 class Mensagem {
   Usuario autor;
   String texto;
@@ -35,6 +28,18 @@ class Mensagem {
     required this.autor,
     required this.texto,
   });
+}
+class Canal {
+  String nome;
+  List<Mensagem> mensagens = [];
+
+  Canal({
+    required this.nome,
+  });
+
+  void adicionarMensagem(Mensagem mensagem) {
+    mensagens.add(mensagem);
+  }
 }
 void main() {
   print('DARTCORD');
