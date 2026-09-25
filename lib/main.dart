@@ -43,4 +43,10 @@ class Canal {
 }
 void main() {
   print('DARTCORD');
+
+  final usuario = Usuario(
+    nome: 'Pedro',
+    apelido: 'PG',
+    online: true,
+  );
 }
