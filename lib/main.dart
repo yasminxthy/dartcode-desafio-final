@@ -20,6 +20,13 @@ class Moderador extends Usuario {
           online: online,
         );
 }
+class Canal {
+  String nome;
+
+  Canal({
+    required this.nome,
+  });
+}
 void main() {
   print('DARTCORD');
 }
