@@ -59,6 +59,9 @@ final moderador = Moderador(
   final canal = Canal(
     nome: 'dart',
   );
+  print('Servidor: Programação Mobile');
+print('Usuários online: ${usuario.apelido} ${moderador.apelido}');
+print('Canais: #${canal.nome}');
   
    final mensagem1 = Mensagem(
     autor: usuario,
