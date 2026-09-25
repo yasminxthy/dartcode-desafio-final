@@ -50,3 +50,12 @@ void main() {
     online: true,
   );
 }
+final moderador = Moderador(
+    nome: 'Ana',
+    apelido: 'Ana',
+    online: true,
+  );
+
+  final canal = Canal(
+    nome: 'dart',
+  );
